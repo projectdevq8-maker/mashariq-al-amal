@@ -1,101 +1,295 @@
-projectdevq8-maker
-mashariq-al-amal
-Repository navigation
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security and quality
-Insights
-Settings
-Commit e47ca4d
-projectdevq8-maker
-projectdevq8-maker
-authored
-16 minutes ago
-·
-·
-Verified
-Create index.html
-main
-1 parent 
-f83be8e
- commit 
-e47ca4d
-File tree
-Filter files…
-index.html
-1
-1 file changed
-+1
--0
-lines changed
-Search within code
- 
-‎index.html‎
-+1
-Lines changed: 1 addition & 0 deletions
-Original file line number	Diff line number	Diff line change
-@@ -0,0 +1 @@
-projectdevq8-maker commented now
-@projectdevq8-maker
-projectdevq8-maker
-now
-Owner
-Author
-projectdevq8-maker
-mashariq-al-amal
-Repository navigation
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security and quality
-Insights
-Settings
-Commit e47ca4d
-projectdevq8-maker
-projectdevq8-maker
-authored
-13 minutes ago
-·
-·
-Verified
-Create index.html
-main
-1 parent
-f83be8e
-commit
-e47ca4d
-File tree
-Filter files…
-index.html
-1 file changed
-+1
--0
-lines changed
-Search within code
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مشارق الأمل | للمقاولات الفاخرة</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --gold-light: #f9e2af;
+            --gold-primary: #d4af37;
+            --gold-dark: #8a6d3b;
+            --glass: rgba(255, 255, 255, 0.03);
+            --border: rgba(212, 175, 55, 0.3);
+        }
 
-‎index.html‎
-+1
-Lines changed: 1 addition & 0 deletions
-Original file line number Diff line number Diff line change
-@@ -0,0 +1 @@
-projectdevq8-makerAdd a comment on line R1
-Add diff comment
-Markdown input: edit mode selected.
-Write
-Preview
-Leave a comment
-0 commit comments
-Comments
-0
-(0)
-Comment
-You're not receiving notifications from this thread.
+        body {
+            background-color: #050505;
+            color: #ffffff;
+            font-family: 'Noto Kufi Arabic', sans-serif;
+            margin: 0;
+            overflow-x: hidden;
+            background-image: radial-gradient(circle at 50% -20%, #1a1a1a 0%, #050505 80%);
+        }
 
-Write a reply
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        .hero { padding: 80px 20px 40px; text-align: center; }
+        
+        .logo-wrapper {
+            position: relative;
+            width: 140px; height: 140px;
+            margin: 0 auto 30px;
+            padding: 5px;
+            background: linear-gradient(135deg, var(--gold-dark), var(--gold-light), var(--gold-dark));
+            border-radius: 50%;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+        }
+
+        .logo-container {
+            width: 100%; height: 100%;
+            background: #000;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            overflow: hidden;
+        }
+
+        .logo-img { width: 100%; height: auto; }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin: 0;
+            background: linear-gradient(to bottom, #fff 30%, var(--gold-primary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -1px;
+        }
+
+        .company-tag {
+            color: var(--gold-primary);
+            font-size: 1.4rem;
+            font-weight: 300;
+            margin-top: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .divider {
+            width: 60px; height: 2px;
+            background: var(--gold-primary);
+            margin: 25px auto;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 60px 0;
+        }
+
+        .service-card {
+            background: var(--glass);
+            border: 1px solid var(--border);
+            padding: 40px 30px;
+            border-radius: 2px;
+            text-align: center;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            backdrop-filter: blur(10px);
+            position: relative;
+        }
+
+        .service-card:hover {
+            background: rgba(212, 175, 55, 0.05);
+            border-color: var(--gold-primary);
+            transform: translateY(-10px);
+        }
+
+        .service-card i {
+            font-size: 45px;
+            margin-bottom: 20px;
+            display: block;
+            color: var(--gold-primary);
+            filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.3));
+        }
+
+        .service-card h3 {
+            color: #fff;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            color: #888;
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+
+        /* --- NOUVELLE SECTION GALERIE --- */
+        .gallery-title {
+            text-align: center;
+            color: var(--gold-primary);
+            font-size: 2rem;
+            margin: 80px 0 40px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            margin-bottom: 60px;
+        }
+
+        .gallery-item {
+            height: 250px;
+            overflow: hidden;
+            border: 1px solid #222;
+            background: #111;
+            position: relative;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.6s all ease;
+            opacity: 0.7;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+            opacity: 1;
+        }
+
+        .gallery-item::after {
+            content: "إنجازاتنا";
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            font-size: 0.8rem;
+            color: var(--gold-primary);
+            background: rgba(0,0,0,0.7);
+            padding: 5px 15px;
+        }
+
+        /* --- FIN GALERIE --- */
+
+        .cta-section { margin: 80px 0; text-align: center; }
+
+        .btn-whatsapp {
+            background: linear-gradient(135deg, var(--gold-dark), var(--gold-primary), var(--gold-light));
+            color: #000;
+            padding: 22px 60px;
+            font-size: 1.4rem;
+            font-weight: 700;
+            border-radius: 0;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            transition: 0.4s;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        .btn-whatsapp:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
+        }
+
+        .footer {
+            background: #000;
+            border-top: 1px solid #1a1a1a;
+            padding: 80px 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 50px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .footer-item h4 {
+            color: var(--gold-primary);
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            border-right: 2px solid var(--gold-primary);
+            padding-right: 15px;
+        }
+
+        .footer-item p, .footer-item a {
+            color: #666;
+            font-size: 0.9rem;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero container">
+        <div class="logo-wrapper">
+            <div class="logo-container">
+                <img src="logo.jpeg" alt="Logo" class="logo-img" onerror="this.src='logo.jpg';">
+            </div>
+        </div>
+        <h1>مشارق الأمل</h1>
+        <div class="company-tag">Contracting & Decoration</div>
+        <div class="divider"></div>
+        <p style="color: #666; font-size: 1.1rem;">الإتقان في التنفيذ .. الرقي في التصميم</p>
+    </section>
+
+    <div class="container">
+        <div class="services">
+            <div class="service-card">
+                <i class="fas fa-paint-roller"></i>
+                <h3>أعمال الأصباغ</h3>
+                <p>تنفيذ أرقى الأصباغ الإيطالية والحديثة (سيجما، بديل رخام) بأعلى جودة تشطيب في الكويت.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-pencil-ruler"></i>
+                <h3>الديكورات</h3>
+                <p>تصميم وتنفيذ قواطع الجبس بورد والديكورات الداخلية التي تعكس فخامة منزلك.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-building-user"></i>
+                <h3>المقاولات العامة</h3>
+                <p>حلول هندسية متكاملة للترميم والتجديد، نعتني بأدق التفاصيل من الأساس حتى التسليم.</p>
+            </div>
+        </div>
+
+        <h2 class="gallery-title">معرض أعمالنا</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="p1.jpg" alt="Work 1" onerror="this.src='https://via.placeholder.com/400x300/111/D4AF37?text=Mashariq+Al+Amal';"></div>
+            <div class="gallery-item"><img src="p2.jpg" alt="Work 2" onerror="this.src='https://via.placeholder.com/400x300/111/D4AF37?text=Mashariq+Al+Amal';"></div>
+            <div class="gallery-item"><img src="p3.jpg" alt="Work 3" onerror="this.src='https://via.placeholder.com/400x300/111/D4AF37?text=Mashariq+Al+Amal';"></div>
+            <div class="gallery-item"><img src="p4.jpg" alt="Work 4" onerror="this.src='https://via.placeholder.com/400x300/111/D4AF37?text=Mashariq+Al+Amal';"></div>
+            <div class="gallery-item"><img src="p5.jpg" alt="Work 5" onerror="this.src='https://via.placeholder.com/400x300/111/D4AF37?text=Mashariq+Al+Amal';"></div>
+            <div class="gallery-item"><img src="p6.jpg" alt="Work 6" onerror="this.src='https://via.placeholder.com/400x300/111/D4AF37?text=Mashariq+Al+Amal';"></div>
+        </div>
+
+        <div class="cta-section">
+            <a href="https://wa.me/96555542588" class="btn-whatsapp">
+                تواصل مباشرة: 55542588
+            </a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-item">
+                <h4>المكتب الرئيسي</h4>
+                <p>حولي - شارع تونس</p>
+                <p>مجمع تونس - ميزانين</p>
+                <p>مكتب رقم 13</p>
+            </div>
+            <div class="footer-item">
+                <h4>تواصل معنا</h4>
+                <a href="mailto:mesharialmeshami@gmail.com">mesharialmeshami@gmail.com</a>
+                <p>Instagram: @mshrq390</p>
+                <p>TikTok: @mshrq390</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
